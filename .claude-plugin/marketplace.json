@@ -5,7 +5,7 @@
     "email": "hi@cobrain.space"
   },
   "metadata": {
-    "description": "The official Cobrain plugin for Claude."
+    "description": "The official Cobrain plugin."
   },
   "plugins": [
     {

@@ -8,7 +8,7 @@
     "email": "hi@cobrain.space"
   },
   "homepage": "https://cobrain.space",
-  "repository": "https://github.com/Overpress-Media/cobrain-plugin-for-claude",
+  "repository": "https://github.com/Overpress-Media/cobrain-plugin",
   "license": "MIT",
   "logo": "assets/logo.png",
   "keywords": ["memory", "notes", "markdown", "knowledge-base", "context", "mcp"],
