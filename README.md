@@ -18,6 +18,10 @@ In Claude Code:
 
 On first use Claude opens the Cobrain sign-in page. A free account is enough.
 
+## Cursor and Grok Bot
+
+The same repository is a Cursor plugin (`.cursor-plugin/plugin.json`, `mcp.json`, the same `cobrain` skill). Until it is listed in the marketplace, add the connector by hand: in Settings > MCP (Cursor) or Connect apps (Grok Bot) add `https://cobrain.space/mcp` and sign in.
+
 ## Links
 
 - Tools reference: https://cobrain.space/guides

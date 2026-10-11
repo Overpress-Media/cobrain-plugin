@@ -1,0 +1,19 @@
+{
+  "name": "cobrain",
+  "displayName": "Cobrain",
+  "version": "1.0.7",
+  "description": "One memory for all your AIs: load, search and save Markdown notes that Claude, ChatGPT and your other AIs share.",
+  "author": {
+    "name": "Cobrain",
+    "email": "hi@cobrain.space"
+  },
+  "homepage": "https://cobrain.space",
+  "repository": "https://github.com/Overpress-Media/cobrain-plugin-for-claude",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": ["memory", "notes", "markdown", "knowledge-base", "context", "mcp"],
+  "category": "integrations",
+  "tags": ["memory", "notes", "knowledge", "mcp"],
+  "mcpServers": "./mcp.json",
+  "skills": "./skills/"
+}
