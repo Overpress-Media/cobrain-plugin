@@ -20,7 +20,7 @@ On first use the client opens the Cobrain sign-in page. A free account is enough
 
 ## Cursor and Grok Bot
 
-The same repository is a Cursor plugin (`.cursor-plugin/plugin.json`, `mcp.json`, the same `cobrain` skill). Until it is listed in the marketplace, add the connector by hand: in Settings > MCP (Cursor) or Connect apps (Grok Bot) add `https://cobrain.space/mcp` and sign in.
+The same repository is a Cursor plugin (`.cursor-plugin/plugin.json`, `mcp.json`, the same `cobrain` skill), listed on [cursor.directory](https://cursor.directory/plugins/cobrain). Step-by-step guide: https://cobrain.space/guides/connect-cursor. In Grok Bot add `https://cobrain.space/mcp` under Connect apps and sign in.
 
 ## Links
 
