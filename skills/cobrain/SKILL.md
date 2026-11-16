@@ -22,7 +22,7 @@ Save what should outlive the conversation as soon as it happens: decisions and w
 - **Adding to a note that exists**: `append_file`. It never conflicts and never loses text.
 - **Changing one part of a note**: `patch_file` with the exact `old_text` copied from `read_file` and the `new_text`. Don't rewrite a whole note to change a few lines.
 - **New note**: `write_file`. On an existing note, `write_file` REPLACES the whole content: pass the `base` version you got from `read_file`, and never use it to add or change a line.
-- **Decisions** go at the end of the unit's `decisions.md` with `append_file`. Facts about the unit live in its `_about.md`.
+- **Decisions** go at the end of the unit's `_decisions.md` with `append_file`. Facts about the unit live in its `_about.md`.
 - **Files** (images, PDFs, logos): `attach_file`.
 - Search before creating: updating the right note is better than a duplicate.
 - `move_file` and `delete_file` change the user's brain for every AI: ask before using them.
@@ -33,12 +33,12 @@ Save what should outlive the conversation as soon as it happens: decisions and w
 
 ## Conventions
 
-- Special file names are English in every brain: `_about.md`, `_ai.md`, `decisions.md`, `_templates/`.
+- Special file names are English in every brain: `_about.md`, `_ai.md`, `_decisions.md`, `_learned.md`, `_templates/`.
 - A `/` inside a title creates a folder: write "Serie D and Under 19", not "Serie D / Under 19".
 - One paragraph is one line: don't wrap text at a fixed width.
 - New unit: `start_project`, then `create_unit` from a template.
 
 ## When it fails
 
-- **The Cobrain tools are not available at all**: the plugin's connector was never connected on this account. Tell the user to open Customize > Plugins > Cobrain > Connectors and connect Cobrain (in Claude Code: `/mcp`, then authenticate `cobrain`; in Cursor or Grok Bot: Settings > Plugins > Cobrain, then sign in), then start a new conversation.
+- **The Cobrain tools are not available at all**: the plugin's connector was never connected on this account. Tell the user to open Customize > Plugins > Cobrain > Connectors and connect Cobrain (in Claude Code: `/mcp`, then authenticate `cobrain`; in Cursor or Grok Bot: Settings > Plugins > Cobrain, then sign in; in Hermes: `hermes mcp login cobrain`; in Gemini CLI: `/mcp auth cobrain`), then start a new conversation.
 - **The tools answer with an authorization or connection error**: don't retry in a loop. The connection expired: disconnect Cobrain in the same Connectors tab, connect it again and sign in with the same email. Their notes are safe.

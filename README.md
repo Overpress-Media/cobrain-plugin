@@ -22,6 +22,36 @@ On first use the client opens the Cobrain sign-in page. A free account is enough
 
 The same repository is a Cursor plugin (`.cursor-plugin/plugin.json`, `mcp.json`, the same `cobrain` skill), listed on [cursor.directory](https://cursor.directory/plugins/cobrain). Step-by-step guide: https://cobrain.space/guides/connect-cursor. In Grok Bot add `https://cobrain.space/mcp` under Connect apps and sign in.
 
+## Hermes Agent
+
+The repository root is also an [Agent Plugins](https://agent-plugins.org) v1 package (`plugin.json`, `mcp.json`, the `cobrain` skill), listed in the Hermes plugin catalog:
+
+```
+hermes plugins install cobrain
+```
+
+Portable `mcp.json` cannot complete OAuth yet, so add the server once to `~/.hermes/config.yaml` and sign in:
+
+```yaml
+mcp_servers:
+  cobrain:
+    url: https://cobrain.space/mcp
+    auth: oauth
+```
+
+```
+hermes mcp login cobrain
+hermes mcp test cobrain
+```
+
+## Gemini CLI
+
+```
+gemini extensions install https://github.com/Overpress-Media/cobrain-plugin
+```
+
+Then run `/mcp auth cobrain` inside Gemini CLI and sign in. The extension loads the same guidance as the skill (`GEMINI.md`).
+
 ## Links
 
 - Tools reference: https://cobrain.space/guides

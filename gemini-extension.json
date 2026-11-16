@@ -1,0 +1,11 @@
+{
+  "name": "cobrain",
+  "version": "1.1.0",
+  "description": "One memory for all your AIs: load, search and save Markdown notes that Gemini, Claude, ChatGPT and your other AIs share.",
+  "mcpServers": {
+    "cobrain": {
+      "httpUrl": "https://cobrain.space/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

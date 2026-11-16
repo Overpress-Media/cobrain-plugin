@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "cobrain",
+  "version": "1.1.0",
+  "description": "One memory for all your AIs: load, search and save Markdown notes that Hermes, Claude, ChatGPT and your other AIs share.",
+  "author": {
+    "name": "Cobrain",
+    "email": "hi@cobrain.space",
+    "url": "https://cobrain.space"
+  },
+  "homepage": "https://cobrain.space",
+  "repository": "https://github.com/Overpress-Media/cobrain-plugin",
+  "license": "MIT",
+  "keywords": ["memory", "notes", "markdown", "knowledge-base", "context", "mcp"]
+}
