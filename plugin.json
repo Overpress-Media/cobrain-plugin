@@ -11,5 +11,21 @@
   "homepage": "https://cobrain.space",
   "repository": "https://github.com/Overpress-Media/cobrain-plugin",
   "license": "MIT",
-  "keywords": ["memory", "notes", "markdown", "knowledge-base", "context", "mcp"]
+  "keywords": [
+    "memory",
+    "notes",
+    "markdown",
+    "knowledge-base",
+    "context",
+    "mcp"
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "cobrain": {
+          "trust": "untrusted"
+        }
+      }
+    }
+  }
 }

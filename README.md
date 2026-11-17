@@ -37,6 +37,7 @@ mcp_servers:
   cobrain:
     url: https://cobrain.space/mcp
     auth: oauth
+    trust: untrusted
 ```
 
 ```
