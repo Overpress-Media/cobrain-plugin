@@ -52,6 +52,20 @@ gemini extensions install https://github.com/Overpress-Media/cobrain-plugin
 
 Then run `/mcp auth cobrain` inside Gemini CLI and sign in. The extension loads the same guidance as the skill (`GEMINI.md`).
 
+## Cline
+
+In Cline open **MCP Servers → Configure → Configure MCP Servers** and add:
+
+```json
+{
+  "mcpServers": {
+    "cobrain": { "type": "streamableHttp", "url": "https://cobrain.space/mcp" }
+  }
+}
+```
+
+Save, then sign in when Cline opens the browser (OAuth, no API key; a free account is enough). Try: *search my brain for "project"*.
+
 ## Links
 
 - Tools reference: https://cobrain.space/guides
